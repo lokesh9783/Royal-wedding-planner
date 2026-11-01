@@ -1,0 +1,273 @@
+/* ========================================================
+   SHAHI BANDHAN — ROYAL DESTINATION WEDDINGS & CELEBRATIONS
+   Royal Rajasthani Luxury Theme
+   ======================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --color-royal-dark: #120B0E;
+  --color-royal-surface: #1E1318;
+  --color-royal-surface-card: #281B21;
+  --color-royal-crimson: #7A172B;
+  --color-royal-crimson-light: #9B1D36;
+  --color-gold-primary: #D4AF37;
+  --color-gold-light: #F7E7A9;
+  --color-gold-dark: #A67C1E;
+  --color-gold-subtle: rgba(212, 175, 55, 0.15);
+  --color-gold-border: rgba(212, 175, 55, 0.35);
+  --color-cream: #FBF8F3;
+  --color-cream-muted: #D5C9BE;
+  --color-text-body: #ECE4DC;
+  --color-text-muted: #A39690;
+  
+  --font-royal: 'Cinzel', serif;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --shadow-gold: 0 12px 40px rgba(212, 175, 55, 0.12);
+  --shadow-deep: 0 20px 50px rgba(0, 0, 0, 0.6);
+  --transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  --border-radius-card: 16px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-royal-dark);
+  color: var(--color-text-body);
+  line-height: 1.65;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Regal Scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-royal-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--color-gold-dark), var(--color-royal-crimson));
+  border-radius: 6px;
+}
+
+/* Royal Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-royal);
+  color: var(--color-cream);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.25;
+}
+
+p {
+  color: var(--color-cream-muted);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Demo Top Ribbon */
+.demo-top-ribbon {
+  background: linear-gradient(90deg, #3A0C16, #6B1527, #3A0C16);
+  border-bottom: 1px solid var(--color-gold-border);
+  color: var(--color-gold-light);
+  font-size: 0.78rem;
+  padding: 0.45rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  font-family: var(--font-sans);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-align: center;
+  z-index: 1001;
+  position: relative;
+}
+
+.demo-top-ribbon .badge {
+  background: var(--color-gold-primary);
+  color: #120B0E;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+/* Section Header Styles */
+.section-wrapper {
+  padding: 6.5rem 0;
+  position: relative;
+}
+
+.section-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--font-royal);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--color-gold-primary);
+  margin-bottom: 0.85rem;
+  padding: 0.35rem 1rem;
+  background: rgba(212, 175, 55, 0.08);
+  border: 1px solid var(--color-gold-border);
+  border-radius: 100px;
+}
+
+.section-title {
+  font-size: clamp(2rem, 3.8vw, 3.2rem);
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #FFFFFF 30%, var(--color-gold-light) 75%, var(--color-gold-primary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-subtitle {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  color: var(--color-cream-muted);
+  max-width: 680px;
+  margin: 0 auto 3.5rem auto;
+  line-height: 1.6;
+}
+
+/* Buttons */
+.btn-gold {
+  background: linear-gradient(135deg, #ECC862 0%, #D4AF37 50%, #A67C1E 100%);
+  color: #120B0E;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.9rem 1.85rem;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  box-shadow: 0 6px 24px rgba(212, 175, 55, 0.3);
+  transition: var(--transition);
+  cursor: pointer;
+  border: 1px solid rgba(255, 235, 160, 0.6);
+}
+
+.btn-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 32px rgba(212, 175, 55, 0.5);
+  background: linear-gradient(135deg, #FFE187 0%, #E5BF45 50%, #B88B22 100%);
+}
+
+.btn-outline-gold {
+  background: rgba(212, 175, 55, 0.05);
+  color: var(--color-gold-light);
+  border: 1px solid var(--color-gold-primary);
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.06em;
+  padding: 0.85rem 1.75rem;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.btn-outline-gold:hover {
+  background: rgba(212, 175, 55, 0.15);
+  border-color: var(--color-gold-light);
+  transform: translateY(-2px);
+  color: #FFF;
+}
+
+/* Glass Card */
+.royal-card {
+  background: linear-gradient(180deg, rgba(35, 22, 28, 0.85) 0%, rgba(20, 12, 16, 0.95) 100%);
+  border: 1px solid var(--color-gold-border);
+  border-radius: var(--border-radius-card);
+  backdrop-filter: blur(12px);
+  transition: var(--transition);
+  box-shadow: var(--shadow-deep);
+}
+
+.royal-card:hover {
+  border-color: var(--color-gold-primary);
+  transform: translateY(-5px);
+  box-shadow: 0 18px 45px rgba(212, 175, 55, 0.15);
+}
+
+/* Filigree Divider */
+.royal-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem auto;
+  color: var(--color-gold-primary);
+}
+.royal-divider::before,
+.royal-divider::after {
+  content: "";
+  height: 1px;
+  width: 60px;
+  background: linear-gradient(90deg, transparent, var(--color-gold-primary));
+}
+.royal-divider::after {
+  background: linear-gradient(90deg, var(--color-gold-primary), transparent);
+}
+
+/* Animations */
+@keyframes goldPulse {
+  0%, 100% { box-shadow: 0 0 15px rgba(212, 175, 55, 0.3); }
+  50% { box-shadow: 0 0 30px rgba(212, 175, 55, 0.7); }
+}
+
+@keyframes floatAnim {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@media (max-width: 768px) {
+  .section-wrapper {
+    padding: 4.5rem 0;
+  }
+  .section-title {
+    font-size: 2.1rem;
+  }
+}
+
