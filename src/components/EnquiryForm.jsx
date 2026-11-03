@@ -245,7 +245,7 @@ export const EnquiryForm = ({ prefilledData = null, onClose = null }) => {
                 </label>
                 <input
                   type="tel"
-                  placeholder="e.g. +91 98290 12345"
+                  placeholder="e.g. +91 97835 12345"
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                   style={{

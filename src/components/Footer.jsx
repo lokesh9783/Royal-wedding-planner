@@ -118,7 +118,7 @@ export const Footer = () => {
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
                 <Mail size={18} color="#D4AF37" style={{ flexShrink: 0 }} />
-                <span>{brand.email}</span>
+                <a href={`mailto:${brand.email}`} style={{ color: '#FFF', fontWeight: 600 }}>{brand.email}</a>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
                 <Clock size={18} color="#D4AF37" style={{ flexShrink: 0 }} />
